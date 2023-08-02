@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="flex">
+    <header id="header" class="flex">
         <div id="logo" class="flex">
             <img id="header-img" src="https://cdn.pixabay.com/photo/2013/07/12/14/51/vinyl-148941_960_720.png"
                 alt="vinyl record">
@@ -23,18 +23,18 @@
         </div>
         <nav id="nav-bar" class="flex">
             <ul class="flex">
-                <li><a href="#subscribe-section">Subscribe</a></li>
-                <li><a href="#records-section">Records</a></li>
-                <li><a href="#artists-section">Artists</a></li>
-                <li><a href="#video">About Us</a></li>
+                <li><a class="nav-link" href="#subscribe-section">Subscribe</a></li>
+                <li><a class="nav-link" href="#records-section">Records</a></li>
+                <li><a class="nav-link" href="#artists-section">Artists</a></li>
+                <li><a class="nav-link" href="#video">About Us</a></li>
             </ul>
         </nav>
     </header>
     <section id="subscribe-section" class="flex">
         <h2>Subscribe to our newsletter and be informed of our hottest records!</h2>
         <form id="form" class="flex" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" type="email" placeholder="  Enter your email address">
-            <input id="sub-button" type="submit" value="Submit">
+            <input id="email" name="email" type="email" placeholder="  Enter your email address">
+            <input id="submit" type="submit" value="Submit">
         </form>
     </section>
     <section id="records-section">
@@ -177,10 +177,10 @@
             </div>
         </div>
     </section>
-    <section id="video">
+    <section>
         <h1 class="category">What you'll be experiencing</h1>
         <div class="video flex">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cRpEfpmU4Wo"
+            <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/cRpEfpmU4Wo"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -192,5 +192,4 @@
         <span>2218 Bates Brothers Road. Columbus, OH.</span>
     </footer>
 </body>
-
 </html>
