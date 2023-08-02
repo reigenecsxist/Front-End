@@ -1,0 +1,308 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    
+    border:px solid black;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: ghostwhite;
+}
+.flex{
+    display:flex;
+}
+/*header*/
+header{
+    position:sticky;
+    top:0;
+    padding:0.5rem;
+    background-color:rgb(161, 217, 236);
+    z-index: 1;
+}
+#logo{
+    align-items: center;
+    width:35%;
+}
+#logo span{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 26px;
+}
+#header-img{
+    width:40px;
+    height:40px;
+}
+#nav-bar{
+    justify-content: flex-end;
+    width:65%;
+    font-family: 'Libre Baskerville', serif;
+}
+#nav-bar ul{
+    list-style: none;
+    align-items: center;
+}
+#nav-bar ul li{
+    padding:0 0.5rem;
+    font-size: 15px;
+}
+#nav-bar ul li a:hover{
+    color:crimson;
+    transition:0.5s;
+}
+#nav-bar ul li a{
+    color:black;
+    transition:0.5s;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+}
+/*subscribe*/
+#subscribe-section{
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 0;
+    background-color:lightcoral;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/12/14/51/vinyl-148941_960_720.png);
+    background-size: 100%;
+    background-blend-mode:color-burn;
+    background-repeat: no-repeat;
+}
+#subscribe-section h2{
+    width:50%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom:2rem;
+    text-shadow:1px 1px 5px;
+}
+#subscribe-section form{
+    width:60%;
+}
+#subscribe-section #email{
+    width:70%;
+    height:40px;
+    border-radius: 100px;
+    font-family: 'Libre Baskerville', serif;
+}
+#subscribe-section #sub-button{
+    width:23%;
+    height:40px;
+    border-radius: 100px;
+    margin:auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+}
+#subscribe-background{
+    width:20px;
+}
+/*records*/
+.category{
+    font-size: 40px;
+    padding:1rem 1rem;
+    background-color:rgb(161, 217, 236);
+    text-shadow:3px 4px 8px white;
+}
+.subcategory{
+    margin:1rem 1rem;
+    font-size: 28px;
+    text-align: center;
+}
+.records{
+    max-width:100%;
+    flex-wrap: wrap;
+}
+.record{
+    background-color:rgba(0,0,0,0.8);
+    color:white;
+    flex-direction: column;
+    max-width:20rem;
+    max-height:30rem;
+    margin:auto;
+    border-radius: 2em;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.record img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+}
+.album-name{
+    font-size: 1.4em;
+    font-weight: 800;
+    text-align: center;
+}
+.artist-name{
+    font-size:1.2em;
+    padding:0.3rem;
+    text-align: center;
+}
+.info{
+    width:100%;
+    height:8rem;
+    flex-direction: row;
+}
+.record-info{
+    flex-direction: column;
+    width:70%;
+    align-items: center;
+    justify-content: center;
+}
+.record-price{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:25%;
+}
+.record-price span{
+    font-size: 2rem;
+    text-shadow:1px 1px 5px ;
+}
+.record-price .dollar-sign{
+    font-size:1rem;
+}
+.record-price .additional-info{
+    justify-content: center;
+    text-align: center;
+    margin-top:0.3rem;
+    font-size: 0.8rem;
+    text-shadow:none;
+}
+/*artists*/
+.artists{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:1rem;
+    justify-content: space-between;
+}
+.artist{
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+}
+.crop-image{
+    width:10rem;
+    height:10rem;
+    overflow:hidden;
+    border-radius: 50%;
+}
+.artist-image{
+    width:10rem;
+    height:10rem;
+    object-fit: cover;
+    filter:grayscale(100%);
+    transition:0.4s;
+}
+.artist-image:hover{
+    filter:none;
+    transition:0.4s;
+}
+.artist span{
+    font-weight: 800;
+}
+/*video*/
+#video{
+    flex-direction: column;
+    justify-content: center;
+}
+.video{
+    padding-top:1rem;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+.video iframe{
+    width:100%;
+}
+/*footer*/
+footer{
+    padding:1rem 0;
+    width:100%;
+    background-color:rgb(161, 217, 236);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer span{
+    font-size: 18px;
+}
+footer span:first-of-type{
+    font-weight: 800;
+    padding-bottom:1rem;
+}
+footer img{
+    width:40px;
+    height:40px;
+    filter:invert();
+    border:1px solid white;
+}
+/* media queries */
+@media only screen and (min-width:1200px){
+/*header*/
+header{
+    position:sticky;
+    top:0;
+    height: 10vh;
+    background-color:rgb(161, 217, 236);
+    z-index: 1;
+}
+#logo span{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+}
+#header-img{
+    width:3vw;
+    height:3vw;
+    margin:0 1em;
+}
+#nav-bar ul li{
+    padding:0 0.5rem;
+    font-size: 2rem;
+    margin-right:1rem;
+}
+/* subscribe */
+#subscribe-section{
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 0;
+    background-color:lightcoral;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/12/14/51/vinyl-148941_960_720.png);
+    background-size: 100%;
+    background-blend-mode:color-burn;
+    background-repeat: no-repeat;
+}
+#subscribe-section h2{
+    width:50%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom:2rem;
+    text-shadow:1px 1px 5px;
+}
+#subscribe-section form{
+    width:60%;
+}
+#subscribe-section #email{
+    width:70%;
+    height:40px;
+    border-radius: 100px;
+    font-family: 'Libre Baskerville', serif;
+}
+#subscribe-section #sub-button{
+    width:23%;
+    height:40px;
+    border-radius: 100px;
+    margin:auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+}
+#subscribe-background{
+    width:20px;
+}
+}

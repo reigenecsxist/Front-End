@@ -1,0 +1,58 @@
+html{
+    font-family:tahoma
+  }
+  body{
+    background-color:#3f205c;
+    color:white
+  }
+  h1{
+    text-align:center;
+  }
+  #description{
+    padding-left:5px;
+    padding-right:5px;
+    padding-bottom:10px;
+    font-style:italic;
+  }
+  form{
+    max-width:500px;
+    margin:auto;
+  }
+  fieldset{
+    border:2px solid #3f205c;
+    background-color:#4d3761;
+  }
+  #infpessoais input{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width:100%
+  }
+  input[type="submit"]{
+    display:block;
+    margin:auto;
+    font-size:20px;
+    padding:3px 15px;
+    background-color:#1c5431;
+    color:white;
+  }
+  label{
+    display:block;
+  }
+  
+  select{
+    margin-top:7px;
+    padding-top:2px;
+    padding-bottom:2px;
+  }
+  textarea{
+    display:block;
+    margin-top:7px;
+    width:100%;
+    height:7em;
+  }
+  #gasta{
+    padding-bottom:3px;
+  }
+  #econ_yes{
+    margin-top:7px;
+  }

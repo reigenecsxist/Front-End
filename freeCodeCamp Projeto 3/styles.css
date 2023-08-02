@@ -1,0 +1,88 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+
+}
+html{
+    background-color:ghostwhite;
+}
+body{
+    max-width:100%;
+    font-family: Helvetica;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+}
+#navbar{
+    top:0;
+    width:20%;
+    height:100%;
+    position:fixed;
+    border-right:1px solid black;
+    overflow:auto;
+}
+#navbar header{
+    text-align: center;
+    word-wrap: break-word;
+}
+.nav-item{
+    border-top: 1px solid black;
+    padding:0rem 0;
+    text-align: center;
+    padding-top:0.8rem
+}
+#main-doc{
+    max-width:70%;
+}
+.main-section header h2{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:crimson;
+}
+a#link{
+    color:blue;
+}
+header{
+    position:sticky;
+    top:0;
+    background-color:ghostwhite;
+    padding-top:2vh;
+    padding-bottom:1vh;
+}
+header h1{
+    margin:0;
+}
+@media screen and (max-width:600px){
+    body{
+        display:revert;/*reverte o layout para o default*/
+    }
+    #main-doc{
+        margin: auto;
+    }
+    #navbar{
+        position:static;
+        width:60%;
+        height:40vh;
+        overflow:auto;
+        margin:2rem auto;
+        border:2px solid black;
+    }
+}
+@media screen and (min-width:600px){
+    #main-doc{
+        margin: 2rem 0 0 25%;
+    }
+}
+@media screen and (min-width:600px) and (max-width:865px){
+    #navbar header h1{
+        font-size:16px;
+    }
+}

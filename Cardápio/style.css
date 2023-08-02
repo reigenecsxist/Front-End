@@ -1,0 +1,81 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/80/50/e1/8050e13f1236e94dae432f055efb850f.jpg);
+    backdrop-filter:blur(3px) ;
+    background-size:auto;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin:0;
+    font-family: 'Palatino Linotype';
+}
+div{
+    background-color:rgb(236, 232, 221);
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    max-width: 600px;
+}
+h1, h2, p{
+    text-align:center;
+}
+#logo, #quiosque{
+    font-family: 'Kaushan Script', cursive;
+}
+#logo{
+    margin-bottom:0px;
+    font-size:50px;
+    margin-top:0px;
+}
+#quiosque{
+    margin-top:-10px;
+    font-size:20px;
+    padding-bottom:5px;
+}
+hr{
+    border:1px solid black;
+}
+.item p{
+    display: inline-block;
+    margin-bottom:0px;
+}
+.comida{
+    width: 50%;
+    text-align:left;
+}
+.preco{
+    width: 50%;
+    text-align:right;
+}
+/*Bebidas*/
+.nalcool, .alcool{
+    display:inline-block;
+    padding-top:0px;
+}
+.nalcool{
+    width:44%;
+    text-align:left;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+.alcool{
+    width:44%;
+    text-align:right;
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+.bebida{
+    width: 80%;
+    text-align:left;
+}
+.precobebidas{
+    width: 20%;
+    text-align:right;
+}
+/*Footer*/
+.redes{
+    display:inline;
+    max-width: 7%;
+}
+#r1{
+    padding-left:43%;
+}

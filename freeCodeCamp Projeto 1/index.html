@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário do Gabriel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulário do Gabriel</h1>
+    <p id="description">Forneça informações para nossa IA traçar padrões de consumo dos cidadãos brasileiros e vender estes dados para empresas de propaganda. Obrigado! :)</p>
+    <form id="survey-form" method="post">
+      <fieldset id="infpessoais">
+        <label id="name-label" for="name">Nome<input id="name" type="text" required placeholder="Gabriel"></label>
+        <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="gabriel@email.com"></label>
+        <label id="number-label" for="number">Idade<input id="number" type="number" min="10" max="100" value="99" placeholder="99"></label>
+      </fieldset>
+      <fieldset>
+        <label>Você é economicamente ativo?</label>
+        <label for="econ_yes"><input id="econ_yes" name="econ" type="radio" value="yes">SIM</label>
+        <label for="econ_no"><input id="econ_no" name="econ" type="radio" value="no">NÃO</label>
+      </fieldset>
+      <fieldset>
+        <label id="gasta">Com o que você mais gasta seu dinheiro?</label>
+        <label><input value="guarda" type="checkbox">Deixo guardado na minha conta</label>
+        <label><input value="veiculo" type="checkbox">Manutenção do veículo</label>
+        <label><input value="investe" type="checkbox">Invisto</label>
+        <label><input value="superfluo" type="checkbox">Gasto com eletrônicos e coisas que me chamam a atenção</label>
+      </fieldset>
+      <fieldset>
+        <label>Qual dessas opções você não compra/investe nunca?</label>
+          <select id="dropdown">
+            <option value="droga">Drogas</option>
+            <option value="checkup">Checkups médicos</option>
+            <option value="celular">Celular novo</option>
+            <option value="all">Todas as opções</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <label>Se você ganhasse na loteria, o que faria?
+        <textarea max="200" placeholder="Eu compraria uma mansão com 250 quartos..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>

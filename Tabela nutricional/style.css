@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+    font-family:Helvetica, sans-serif;
+}
+body, span, .calories{
+    display:flex;
+    flex-wrap: nowrap;
+}
+.tabela{
+    background-color:white;
+    max-width: 406px;
+    margin:2rem auto;
+    padding:6px;
+}
+.h1-nome{
+    font-weight:900;
+    font-size:3rem;
+    margin-top:-0.5rem;
+    margin-bottom:0;
+}
+.bar{
+    width:100%;
+    height:1px;
+    background-color:black;
+    border:none;
+    margin: 0.5rem 0;
+}
+.less-margin{
+    margin:0.2rem 0;
+}
+#bar-indent{
+    margin-left:2.6rem;
+    width:auto;
+}
+.large{
+    height:1rem;
+    margin:0.3rem auto;
+}
+.medium{
+    height:0.4rem;
+}
+.h2-servings{
+    font-weight: 600;
+}
+.h2-size{
+    font-weight: 900;
+    transform: scale(1.04,1);
+    padding-left:7px
+}
+.nomargin{
+    margin:0 auto;
+}
+.calories{
+    justify-content: space-between;
+}
+.calories-text{
+    flex-direction: column;
+    font-weight: 800;
+}
+.calories-text span:first-of-type{
+    transform: scale(1,0.9);
+}
+.calories-text span:last-of-type{
+    font-size: 2.5rem;
+    padding:0;
+    margin:-0.8rem 0;
+}
+.numcalories{
+    font-weight:900;
+    font-size:3rem;
+    align-items: flex-end;
+}
+.values span{
+    align-items: baseline;
+    font-size: 18px;
+}
+.right:first-of-type{
+    font-size: small;
+}
+.right{
+    font-weight: 900;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+.not-bold{
+    font-weight: normal;
+}
+.bold-value{
+    font-weight:900;
+    margin-right: 5px;
+}
+.indent{
+    text-indent: 1.3rem;
+    margin-right: 5px;
+}
+#indent-plus{
+    text-indent: 2.6rem;
+}
+#last-info{
+    display: flex;
+    font-size: smaller;
+    width:100%
+}
+#subtext{
+    margin-left: 0.2rem;
+}
